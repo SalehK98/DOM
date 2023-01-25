@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,
+initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Header</h1>
+    <p>Paragraph</p>
+    <a href="#">link</a>
+    <img src="" alt="" />
+    <div class="x">Div with a class</div>
+    <div id="y">Div with an id</div>
+    <input type="text" />
+    <input type="text" />
+    <input type="text" />
+  </body>
+  <script>
+    //your js code here
+    // let container = document.body.getElementsByTagName("*");
+    // for (const element of container) {
+    //   console.log(element);
+    // }
+
+    let con = document.querySelector("h1");
+    console.log(con);
+    let con1 = document.querySelector("p");
+    console.log(con1);
+    let con2 = document.querySelector("a");
+    console.log(con2);
+    let con3 = document.querySelector("img");
+    console.log(con3);
+    let con4 = document.querySelector("div");
+    console.log(con4);
+    let con5 = document.querySelectorAll("div")[1];
+    console.log(con5);
+    let con6 = document.querySelector("input");
+    console.log(con6);
+    let con7 = document.querySelectorAll("input")[1];
+    console.log(con7);
+    let con8 = document.querySelectorAll("input")[2];
+    console.log(con8);
+    let con9 = document.querySelectorAll("input");
+    con9.forEach((el) => {
+      console.log(el);
+    });
+    let con10 = document.getElementsByTagName("input");
+    console.log(con10);
+    for (const iterator of con10) {
+      console.log(iterator);
+    }
+  </script>
+</html>
